@@ -1,4 +1,4 @@
-# 🧬 Biomedical Imaging Reconstruction
+# Biomedical Imaging Reconstruction
 
 A complete CT image reconstruction pipeline implemented in **Python** as part of the Biomedical Engineering coursework.  
 This project builds a full workflow from **image grid creation** to **GPU-accelerated backprojection**, demonstrating the principles of medical image reconstruction.
@@ -23,3 +23,40 @@ This project builds a full workflow from **image grid creation** to **GPU-accele
 Install dependencies:
 ```bash
 pip install numpy matplotlib scipy pyopencl
+
+# How to Run
+Each task has its own folder with runnable scripts.
+
+## Task 1 – Grid & Phantom
+cd Task1_Grid
+python SheppLoganShow.py
+
+# Task 2 – Parallel-Beam Reconstruction
+cd Task2_ParallelBeam
+python Ex2Run.py
+
+# Task 3 – Fan-Beam Reconstruction
+cd Task3_FanBeam
+python Ex3Run.py
+
+# Task 4 – GPU / OpenCL
+cd Task4_OpenCL
+python Ex4Run1.py   # Grid addition on GPU
+python Ex4Run2.py   # GPU-accelerated backprojection
+
+# Folder Structure
+Biomedical-Imaging-Reconstruction/
+│
+├── Task1_Grid/
+├── Task2_ParallelBeam/
+├── Task3_FanBeam/
+├── Task4_OpenCL/
+└── README.md
+
+Each folder includes:
+
+Exercise #.pdf – Original instructions
+
+Grid.py, Methods.py, interpolate.py, phantom.py – Core modules
+
+Ex#Run.py – Main runnable scripts
