@@ -25,9 +25,11 @@ Install dependencies:
 pip install numpy matplotlib scipy pyopencl
 
 # How to Run
+
 Each task has its own folder with runnable scripts.
 
 ## Task 1 – Grid & Phantom
+
 cd Task1_Grid
 python SheppLoganShow.py
 
